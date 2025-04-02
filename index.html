@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Arctic Monkeys - Audio Visualizer</title>
+  </head>
+
+  <body>
+    <div class="player">
+      <button id="playPause">▶</button>
+      <input class="slider" type="range" id="seekBar" value="0" max="100" />
+      <span class="time" id="currentTime">0:00</span>
+      <span class="time" id="currentTime">-</span>
+      <span class="time" id="duration">0:00</span>
+    </div>
+    <canvas id="visualizer"></canvas>
+
+    <audio id="audio">
+      <source src="do_i_wanna_know_arctic_monkeys.m4a" type="audio/mp4" />
+      Seu navegador não suporta áudio.
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
